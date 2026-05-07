@@ -45,12 +45,12 @@ export function ContactSection() {
               href="https://wa.me/59899233728"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-6 p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/25 transition-all duration-300 hover:shadow-lg hover:shadow-primary/8"
+              className="group flex items-center gap-4 sm:gap-6 p-5 sm:p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/25 transition-all duration-300 hover:shadow-lg hover:shadow-primary/8"
             >
-              <div className="w-14 h-14 rounded-full bg-primary/8 border border-primary/15 flex items-center justify-center group-hover:bg-primary/14 transition-colors duration-300">
-                <MessageCircle className="w-6 h-6 text-primary" />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 rounded-full bg-primary/8 border border-primary/15 flex items-center justify-center group-hover:bg-primary/14 transition-colors duration-300">
+                <MessageCircle className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <p className="font-serif text-xl text-primary mb-1">{t.contact.whatsapp}</p>
                 <p className="text-muted-foreground">+598 99 233 728</p>
               </div>
@@ -58,26 +58,26 @@ export function ContactSection() {
 
             {/* Instagram — ocean-mid to keep it distinct yet primary-family */}
             <a
-              href="https://instagram.com/rafap.ashtangui"
+              href="https://instagram.com/samudravinyasa.ashtanga"
               target="_blank"
               rel="noopener noreferrer"
-              className="group flex items-center gap-6 p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/25 transition-all duration-300 hover:shadow-lg hover:shadow-primary/8"
+              className="group flex items-center gap-4 sm:gap-6 p-5 sm:p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/25 transition-all duration-300 hover:shadow-lg hover:shadow-primary/8"
             >
-              <div className="w-14 h-14 rounded-full bg-primary/8 border border-primary/15 flex items-center justify-center group-hover:bg-primary/14 transition-colors duration-300">
-                <Instagram className="w-6 h-6 text-ocean-mid" />
+              <div className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 rounded-full bg-primary/8 border border-primary/15 flex items-center justify-center group-hover:bg-primary/14 transition-colors duration-300">
+                <Instagram className="w-5 h-5 sm:w-6 sm:h-6 text-ocean-mid" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <p className="font-serif text-xl text-primary mb-1">{t.contact.instagram}</p>
-                <p className="text-muted-foreground">@rafap.ashtangui</p>
+                <p className="text-muted-foreground text-sm sm:text-base break-words leading-relaxed">@samudravinyasa.ashtanga</p>
               </div>
             </a>
 
             {/* Location */}
-            <div className="flex items-center gap-6 p-6 rounded-2xl bg-card border border-border/50">
-              <div className="w-14 h-14 rounded-full bg-primary/8 border border-primary/15 flex items-center justify-center">
-                <MapPin className="w-6 h-6 text-primary" />
+            <div className="flex items-center gap-4 sm:gap-6 p-5 sm:p-6 rounded-2xl bg-card border border-border/50">
+              <div className="w-12 h-12 sm:w-14 sm:h-14 shrink-0 rounded-full bg-primary/8 border border-primary/15 flex items-center justify-center">
+                <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-primary" />
               </div>
-              <div>
+              <div className="min-w-0">
                 <p className="font-serif text-xl text-primary mb-1">{t.contact.location}</p>
                 <p className="text-muted-foreground">Renacer Studio — Pinares, Maldonado</p>
               </div>
