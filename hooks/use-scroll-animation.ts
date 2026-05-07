@@ -1,7 +1,7 @@
 "use client"
 
 import { useInView } from 'framer-motion'
-import { useRef } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 type ScrollAnimationOptions = {
   once?: boolean
@@ -10,10 +10,21 @@ type ScrollAnimationOptions = {
 
 export function useScrollAnimation(options?: ScrollAnimationOptions) {
   const ref = useRef(null)
+  const [fallbackVisible, setFallbackVisible] = useState(false)
   const isInView = useInView(ref, {
     once: options?.once ?? true,
-    margin: options?.margin ?? '-100px',
+    margin: options?.margin ?? '0px',
   })
 
-  return { ref, isInView }
+  useEffect(() => {
+    if (isInView) return
+
+    const timeout = window.setTimeout(() => {
+      setFallbackVisible(true)
+    }, 1200)
+
+    return () => window.clearTimeout(timeout)
+  }, [isInView])
+
+  return { ref, isInView: isInView || fallbackVisible }
 }

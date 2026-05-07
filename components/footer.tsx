@@ -10,7 +10,7 @@ export function Footer() {
   const { ref, isInView } = useScrollAnimation()
 
   return (
-    <footer ref={ref} className="relative py-16 lg:py-20 border-t border-primary/12">
+    <footer ref={ref} className="relative py-16 lg:py-20 border-t border-primary/12 overflow-hidden">
       {/* Background accent — primary */}
       <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] rounded-full bg-primary/4 blur-3xl" />
 

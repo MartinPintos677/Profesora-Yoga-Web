@@ -10,7 +10,7 @@ export function ClassesSection() {
   const { ref, isInView } = useScrollAnimation()
 
   return (
-    <section id="classes" className="relative py-24 lg:py-32 bg-cream/30">
+    <section id="classes" className="relative py-24 lg:py-32 bg-cream/30 overflow-hidden">
       {/* Background accents — primary only */}
       <div className="absolute top-1/4 left-0 w-[400px] h-[400px] rounded-full bg-primary/4 blur-3xl" />
       <div className="absolute bottom-0 right-1/4 w-[300px] h-[300px] rounded-full bg-primary/3 blur-3xl" />

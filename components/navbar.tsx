@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from 'react'
+import { useState, type MouseEvent } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
 import { useI18n, languageNames, type Language } from '@/lib/i18n'
 import { Menu, X, ChevronDown } from 'lucide-react'
@@ -19,6 +19,22 @@ export function Navbar() {
     { href: '#plans', label: t.nav.plans },
     { href: '#contact', label: t.nav.contact },
   ]
+
+  const handleMobileNavClick = (
+    event: MouseEvent<HTMLAnchorElement>,
+    href: string,
+  ) => {
+    event.preventDefault()
+    setIsMenuOpen(false)
+
+    window.requestAnimationFrame(() => {
+      const section = document.querySelector(href)
+      if (!section) return
+
+      section.scrollIntoView({ behavior: 'smooth', block: 'start' })
+      window.history.pushState(null, '', href)
+    })
+  }
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border/50">
@@ -93,8 +109,10 @@ export function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
+            type="button"
             className="lg:hidden p-2 text-primary"
             aria-label="Toggle menu"
+            aria-expanded={isMenuOpen}
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -116,7 +134,7 @@ export function Navbar() {
                 <a
                   key={link.href}
                   href={link.href}
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={(event) => handleMobileNavClick(event, link.href)}
                   className="block text-lg font-serif text-primary hover:text-ocean-mid transition-colors duration-300"
                 >
                   {link.label}
