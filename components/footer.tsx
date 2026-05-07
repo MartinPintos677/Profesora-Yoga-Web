@@ -22,15 +22,15 @@ export function Footer() {
           className="flex flex-col items-center text-center"
         >
           {/* Logo */}
-          <div className="flex items-center gap-3 mb-6">
+          <div className="flex items-center gap-4 mb-6">
             <Image
               src="/Logo.jpg"
               alt="Samudra Vinyāsa"
-              width={48}
-              height={48}
+              width={72}
+              height={72}
               className="rounded-full"
             />
-            <span className="font-serif text-xl font-light text-primary">
+            <span className="font-serif text-2xl font-light text-primary">
               Samudra Vinyāsa
             </span>
           </div>
