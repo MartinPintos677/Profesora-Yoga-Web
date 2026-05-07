@@ -26,11 +26,11 @@ export function Footer() {
             <Image
               src="/Logo.jpg"
               alt="Samudra Vinyāsa"
-              width={72}
-              height={72}
+              width={96}
+              height={96}
               className="rounded-full"
             />
-            <span className="font-serif text-2xl font-light text-primary">
+            <span className="font-serif text-3xl font-light text-primary">
               Samudra Vinyāsa
             </span>
           </div>
