@@ -1,0 +1,127 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Warm parchment background — subtle warmth, never cold white */
+  --background: oklch(0.975 0.006 85);
+  --foreground: oklch(0.17 0.045 248);
+
+  /* ─── PRIMARY: Deep ocean navy — exact hue from the nautilus logo ─── */
+  /* This is the dominant brand color: headings, nav, icons, buttons     */
+  --primary: oklch(0.28 0.095 252);
+  --primary-foreground: oklch(0.97 0.005 85);
+
+  /* ─── ACCENT: Turquoise — secondary only, used sparingly ─────────── */
+  /* Subtle teal for hover glows, decorative underlines, small details   */
+  --accent: oklch(0.58 0.10 198);
+  --accent-foreground: oklch(0.97 0.005 85);
+
+  /* ─── OCEAN MID: A mid-depth blue used for supporting text ─────────  */
+  --ocean-mid: oklch(0.40 0.075 250);
+
+  /* Soft spiritual violet — very restrained, used only for signatures   */
+  --violet: oklch(0.42 0.07 278);
+  --violet-foreground: oklch(0.97 0.005 85);
+
+  /* Earthy warm brown */
+  --earth: oklch(0.35 0.045 58);
+  --earth-foreground: oklch(0.97 0.005 85);
+
+  /* Warm cream panel backgrounds */
+  --cream: oklch(0.965 0.012 82);
+
+  /* Card and UI elements */
+  --card: oklch(0.99 0.004 90);
+  --card-foreground: oklch(0.17 0.045 248);
+  --popover: oklch(0.99 0.004 90);
+  --popover-foreground: oklch(0.17 0.045 248);
+
+  /* Secondary tones */
+  --secondary: oklch(0.94 0.012 248);
+  --secondary-foreground: oklch(0.28 0.085 252);
+
+  /* Muted */
+  --muted: oklch(0.93 0.010 248);
+  --muted-foreground: oklch(0.48 0.030 252);
+
+  /* Borders — primary-tinted, not neutral grey */
+  --border: oklch(0.88 0.018 248);
+  --input: oklch(0.91 0.014 248);
+
+  /* Ring follows primary, not accent */
+  --ring: oklch(0.28 0.095 252);
+
+  /* Destructive */
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.577 0.245 27.325);
+
+  --radius: 0.5rem;
+}
+
+@theme inline {
+  --font-sans: 'Inter', 'Inter Fallback', system-ui, sans-serif;
+  --font-serif: 'Cormorant Garamond', 'Georgia', serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-violet: var(--violet);
+  --color-violet-foreground: var(--violet-foreground);
+  --color-earth: var(--earth);
+  --color-earth-foreground: var(--earth-foreground);
+  --color-cream: var(--cream);
+  --color-ocean-mid: var(--ocean-mid);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Custom scrollbar — ocean-tinted */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: oklch(0.72 0.040 250);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
