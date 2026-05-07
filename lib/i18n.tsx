@@ -277,7 +277,7 @@ const translations: Record<Language, Translations> = {
     },
     contact: {
       title: 'Contact',
-      subtitle: 'Let&apos;s connect',
+      subtitle: "Let's connect",
       whatsapp: 'WhatsApp',
       instagram: 'Instagram',
       location: 'Location',
