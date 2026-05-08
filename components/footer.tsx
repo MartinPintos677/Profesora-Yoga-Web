@@ -63,9 +63,18 @@ export function Footer() {
           </p>
 
           {/* Developer credit */}
-          <p className="text-muted-foreground/50 text-xs">
-            {t.footer.developer}
-          </p>
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-3 text-muted-foreground/50">
+            <Image
+              src="/LogoAnalista.png"
+              alt="Martin Pintos - Analista de Sistemas"
+              width={40}
+              height={40}
+              className="h-10 w-auto object-contain opacity-70"
+            />
+            <p className="text-xs">
+              {t.footer.developer}
+            </p>
+          </div>
         </motion.div>
       </div>
     </footer>
