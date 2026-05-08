@@ -123,13 +123,19 @@ export function Navbar() {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            transition={{ duration: 0.3 }}
-            className="lg:hidden bg-background border-b border-border"
+            initial={{ height: 0 }}
+            animate={{ height: 'auto' }}
+            exit={{ height: 0 }}
+            transition={{ duration: 0.28, ease: 'easeInOut' }}
+            className="lg:hidden overflow-hidden bg-background border-b border-border"
           >
-            <div className="px-6 py-6 space-y-4">
+            <motion.div
+              initial={{ opacity: 0, y: -8 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -8 }}
+              transition={{ duration: 0.16, ease: 'easeOut' }}
+              className="px-6 py-6 space-y-4"
+            >
               {navLinks.map((link) => (
                 <a
                   key={link.href}
@@ -163,7 +169,7 @@ export function Navbar() {
                   ))}
                 </div>
               </div>
-            </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>
