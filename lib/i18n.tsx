@@ -90,13 +90,13 @@ const translations: Record<Language, Translations> = {
       language: 'Idioma',
     },
     hero: {
-      subtitle: 'Flujo del océano',
+      subtitle: 'Respirá, practicá, volvé a vos',
       cta: 'Reservar clase',
       ctaSecondary: 'Ver horarios',
     },
     practice: {
       title: 'La Práctica',
-      description: 'Ashtanga Yoga es un camino de transformación a través del movimiento consciente, la respiración profunda y la repetición meditativa. Cada práctica es una invitación a encontrarte contigo mismo.',
+      description: 'Ashtanga Yoga es una práctica de respiración, presencia y movimiento consciente. Una secuencia que se repite y se transforma con vos, clase a clase, desde el ritmo propio de cada cuerpo.',
       breath: {
         title: 'Respiración',
         description: 'El ujjayi pranayama guía cada movimiento, creando un ritmo interno que aquieta la mente.',
@@ -119,37 +119,37 @@ const translations: Record<Language, Translations> = {
       subtitle: 'Encuentra tu espacio de práctica',
       virtual: {
         title: 'Clases Virtuales',
-        description: 'Practica desde la comodidad de tu hogar con guía en tiempo real.',
+        description: 'Práctica guiada en vivo para sostener tu rutina desde donde estés.',
         schedule: 'Lunes y Miércoles — 17:30',
       },
       presential: {
         title: 'Clases Presenciales',
-        description: 'Experiencia completa en un espacio diseñado para la práctica.',
+        description: 'Encuentros cuidados para profundizar la técnica, la respiración y la escucha del cuerpo.',
         schedule: 'Lunes y Miércoles — 19:30',
         location: 'Renacer Studio — Pinares, Maldonado',
       },
       levels: {
         title: 'Todos los Niveles',
-        description: 'Práctica adaptada a tu momento y experiencia personal.',
+        description: 'No necesitás experiencia previa. La práctica se acompaña según tu proceso.',
       },
       reserve: 'Reservar',
     },
     experience: {
       title: 'Experiencia',
-      subtitle: 'Momentos de práctica y conexión',
+      subtitle: 'Práctica, presencia y movimiento',
     },
     aboutRafaela: {
       title: 'Rafaela',
       subtitle: 'Guía de práctica',
       description: [
-        'Mi camino con el yoga comenzó como una búsqueda personal de equilibrio y quietud interior. El Ashtanga Yoga llegó a mi vida como una revelación: una práctica que combina la disciplina del cuerpo con la libertad del espíritu.',
-        'Cada día en el mat es una oportunidad de explorar nuestros límites y expandir nuestra consciencia. Creo profundamente en el poder transformador de esta práctica ancestral.',
-        'Mi propósito es crear un espacio seguro y sagrado donde cada practicante pueda encontrar su propio flujo, su propio océano interior.',
+        'Mi camino con el yoga comenzó como una búsqueda personal de equilibrio, presencia y quietud interior. En el Ashtanga encontré una práctica honesta: exigente, sensible y profundamente transformadora.',
+        'Cada encuentro en el mat es una oportunidad para escuchar el cuerpo, ordenar la respiración y observar cómo estamos habitando el presente.',
+        'Mi intención es acompañar una práctica cercana y cuidada, donde cada persona pueda avanzar a su ritmo y encontrar su propio flujo.',
       ],
     },
     plans: {
       title: 'Planes',
-      subtitle: 'Elige tu ritmo de práctica',
+      subtitle: 'Elegí tu ritmo de práctica',
       popular: 'Popular',
       weekly1: {
         title: '1 vez por semana',
@@ -194,13 +194,13 @@ const translations: Record<Language, Translations> = {
       language: 'Language',
     },
     hero: {
-      subtitle: 'Ocean Flow',
+      subtitle: 'Breathe, practice, return to yourself',
       cta: 'Book a class',
       ctaSecondary: 'View schedule',
     },
     practice: {
       title: 'The Practice',
-      description: 'Ashtanga Yoga is a path of transformation through conscious movement, deep breathing, and meditative repetition. Each practice is an invitation to meet yourself.',
+      description: 'Ashtanga Yoga is a practice of breath, presence, and conscious movement. A sequence that repeats and evolves with you, class by class, at the rhythm of your own body.',
       breath: {
         title: 'Breath',
         description: 'Ujjayi pranayama guides each movement, creating an internal rhythm that quiets the mind.',
@@ -223,32 +223,32 @@ const translations: Record<Language, Translations> = {
       subtitle: 'Find your practice space',
       virtual: {
         title: 'Virtual Classes',
-        description: 'Practice from the comfort of your home with real-time guidance.',
+        description: 'Live guided practice to support your routine wherever you are.',
         schedule: 'Monday and Wednesday — 5:30 PM',
       },
       presential: {
         title: 'In-Person Classes',
-        description: 'Complete experience in a space designed for practice.',
+        description: 'Carefully held sessions to deepen technique, breath, and body awareness.',
         schedule: 'Monday and Wednesday — 7:30 PM',
         location: 'Renacer Studio — Pinares, Maldonado',
       },
       levels: {
         title: 'All Levels',
-        description: 'Practice adapted to your moment and personal experience.',
+        description: 'No previous experience is needed. The practice is guided according to your process.',
       },
       reserve: 'Reserve',
     },
     experience: {
       title: 'Experience',
-      subtitle: 'Moments of practice and connection',
+      subtitle: 'Practice, presence, and movement',
     },
     aboutRafaela: {
       title: 'Rafaela',
       subtitle: 'Practice Guide',
       description: [
-        'My journey with yoga began as a personal search for balance and inner stillness. Ashtanga Yoga came into my life as a revelation: a practice that combines bodily discipline with spiritual freedom.',
-        'Every day on the mat is an opportunity to explore our limits and expand our consciousness. I deeply believe in the transformative power of this ancestral practice.',
-        'My purpose is to create a safe and sacred space where each practitioner can find their own flow, their own inner ocean.',
+        'My journey with yoga began as a personal search for balance, presence, and inner stillness. In Ashtanga I found an honest practice: demanding, sensitive, and deeply transformative.',
+        'Every meeting on the mat is an opportunity to listen to the body, organize the breath, and observe how we are inhabiting the present.',
+        'My intention is to guide a close and careful practice, where each person can move at their own rhythm and find their own flow.',
       ],
     },
     plans: {
@@ -298,13 +298,13 @@ const translations: Record<Language, Translations> = {
       language: 'Idioma',
     },
     hero: {
-      subtitle: 'Fluxo do oceano',
+      subtitle: 'Respire, pratique, volte para si',
       cta: 'Reservar aula',
       ctaSecondary: 'Ver horários',
     },
     practice: {
       title: 'A Prática',
-      description: 'Ashtanga Yoga é um caminho de transformação através do movimento consciente, respiração profunda e repetição meditativa. Cada prática é um convite para se encontrar consigo mesmo.',
+      description: 'Ashtanga Yoga é uma prática de respiração, presença e movimento consciente. Uma sequência que se repete e se transforma com você, aula após aula, no ritmo do seu próprio corpo.',
       breath: {
         title: 'Respiração',
         description: 'O ujjayi pranayama guia cada movimento, criando um ritmo interno que aquieta a mente.',
@@ -327,32 +327,32 @@ const translations: Record<Language, Translations> = {
       subtitle: 'Encontre seu espaço de prática',
       virtual: {
         title: 'Aulas Virtuais',
-        description: 'Pratique do conforto da sua casa com orientação em tempo real.',
+        description: 'Prática guiada ao vivo para sustentar sua rotina onde você estiver.',
         schedule: 'Segunda e Quarta — 17:30',
       },
       presential: {
         title: 'Aulas Presenciais',
-        description: 'Experiência completa em um espaço projetado para a prática.',
+        description: 'Encontros cuidados para aprofundar técnica, respiração e escuta do corpo.',
         schedule: 'Segunda e Quarta — 19:30',
         location: 'Renacer Studio — Pinares, Maldonado',
       },
       levels: {
         title: 'Todos os Níveis',
-        description: 'Prática adaptada ao seu momento e experiência pessoal.',
+        description: 'Não é preciso ter experiência prévia. A prática acompanha o seu processo.',
       },
       reserve: 'Reservar',
     },
     experience: {
       title: 'Experiência',
-      subtitle: 'Momentos de prática e conexão',
+      subtitle: 'Prática, presença e movimento',
     },
     aboutRafaela: {
       title: 'Rafaela',
       subtitle: 'Guia de prática',
       description: [
-        'Minha jornada com o yoga começou como uma busca pessoal por equilíbrio e quietude interior. O Ashtanga Yoga chegou à minha vida como uma revelação: uma prática que combina a disciplina do corpo com a liberdade do espírito.',
-        'Cada dia no tapete é uma oportunidade de explorar nossos limites e expandir nossa consciência. Acredito profundamente no poder transformador desta prática ancestral.',
-        'Meu propósito é criar um espaço seguro e sagrado onde cada praticante possa encontrar seu próprio fluxo, seu próprio oceano interior.',
+        'Minha jornada com o yoga começou como uma busca pessoal por equilíbrio, presença e quietude interior. No Ashtanga encontrei uma prática honesta: exigente, sensível e profundamente transformadora.',
+        'Cada encontro no tapete é uma oportunidade para escutar o corpo, organizar a respiração e observar como estamos habitando o presente.',
+        'Minha intenção é acompanhar uma prática próxima e cuidada, onde cada pessoa possa avançar no seu ritmo e encontrar seu próprio fluxo.',
       ],
     },
     plans: {

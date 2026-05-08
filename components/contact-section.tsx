@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useI18n } from '@/lib/i18n'
 import { useScrollAnimation } from '@/hooks/use-scroll-animation'
 import { MessageCircle, Instagram, MapPin } from 'lucide-react'
+import { WHATSAPP_URL } from '@/lib/contact'
 
 export function ContactSection() {
   const { t } = useI18n()
@@ -42,7 +43,7 @@ export function ContactSection() {
           >
             {/* WhatsApp — primary icon circle */}
             <a
-              href="https://wa.me/59899233728"
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="group flex items-center gap-4 sm:gap-6 p-5 sm:p-6 rounded-2xl bg-card border border-border/50 hover:border-primary/25 transition-all duration-300 hover:shadow-lg hover:shadow-primary/8"
@@ -84,7 +85,7 @@ export function ContactSection() {
             </div>
           </motion.div>
 
-          {/* Map Placeholder */}
+          {/* Map placeholder */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
@@ -95,8 +96,8 @@ export function ContactSection() {
               <div className="absolute inset-0 flex items-center justify-center">
                 <div className="text-center">
                   <MapPin className="w-12 h-12 text-primary/25 mx-auto mb-4" />
-                  <p className="text-muted-foreground text-sm">Mapa</p>
-                  <p className="text-muted-foreground/55 text-xs mt-1">Pinares, Maldonado</p>
+                  <p className="text-muted-foreground text-sm">Renacer Studio</p>
+                  <p className="text-muted-foreground/55 text-xs mt-1">Ubicación exacta próximamente</p>
                 </div>
               </div>
 

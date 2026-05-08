@@ -17,13 +17,19 @@ const cormorant = Cormorant_Garamond({
 })
 
 export const metadata: Metadata = {
-  title: 'Samudra Vinyāsa | Ocean Flow Yoga',
-  description: 'Ashtanga Yoga practice inspired by movement, breath, and spiritual connection. Experience the flow of the ocean through transformative yoga sessions.',
-  keywords: ['Ashtanga Yoga', 'Yoga Uruguay', 'Samudra Vinyasa', 'Ocean Flow', 'Meditation', 'Wellness'],
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'),
+  title: 'Samudra Vinyāsa | Ashtanga Yoga en Maldonado',
+  description: 'Clases de Ashtanga Yoga presenciales en Pinares, Maldonado y virtuales. Una práctica guiada por Rafaela para habitar el cuerpo, la respiración y el movimiento consciente.',
+  keywords: ['Ashtanga Yoga', 'Yoga Maldonado', 'Yoga Pinares', 'Yoga Uruguay', 'Samudra Vinyasa', 'Clases de yoga'],
+  icons: {
+    icon: '/icon.svg',
+    apple: '/apple-icon.png',
+  },
   openGraph: {
-    title: 'Samudra Vinyāsa | Ocean Flow Yoga',
-    description: 'Ashtanga Yoga practice inspired by movement, breath, and spiritual connection.',
+    title: 'Samudra Vinyāsa | Ashtanga Yoga en Maldonado',
+    description: 'Clases presenciales y virtuales de Ashtanga Yoga guiadas por Rafaela.',
     type: 'website',
+    images: ['/Logo.jpg'],
   },
 }
 

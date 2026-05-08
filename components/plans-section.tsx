@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useI18n } from '@/lib/i18n'
 import { useScrollAnimation } from '@/hooks/use-scroll-animation'
 import { Check } from 'lucide-react'
+import { WHATSAPP_URL } from '@/lib/contact'
 
 export function PlansSection() {
   const { t } = useI18n()
@@ -120,7 +121,9 @@ export function PlansSection() {
                 </ul>
 
                 <a
-                  href="#contact"
+                  href={WHATSAPP_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className={`inline-flex items-center justify-center w-full px-6 py-3 font-medium rounded-full transition-all duration-300 ${
                     plan.popular
                       ? 'bg-background text-primary hover:bg-background/90'

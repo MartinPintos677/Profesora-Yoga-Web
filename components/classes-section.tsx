@@ -4,6 +4,7 @@ import { motion } from 'framer-motion'
 import { useI18n } from '@/lib/i18n'
 import { useScrollAnimation } from '@/hooks/use-scroll-animation'
 import { Video, Users, Sparkles, MapPin, Clock } from 'lucide-react'
+import { WHATSAPP_URL } from '@/lib/contact'
 
 export function ClassesSection() {
   const { t } = useI18n()
@@ -88,7 +89,9 @@ export function ClassesSection() {
                 </div>
               </div>
               <a
-                href="#contact"
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center w-full mt-8 px-6 py-3 bg-background text-primary font-medium rounded-full hover:bg-background/90 transition-all duration-300"
               >
                 {t.classes.reserve}

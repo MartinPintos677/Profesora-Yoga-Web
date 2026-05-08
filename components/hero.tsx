@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion'
 import { useI18n } from '@/lib/i18n'
+import { WHATSAPP_URL } from '@/lib/contact'
 
 export function Hero() {
   const { t } = useI18n()
@@ -70,7 +71,9 @@ export function Hero() {
               className="flex items-center gap-4"
             >
               <a
-                href="#contact"
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-4 bg-primary text-primary-foreground font-medium rounded-full hover:bg-primary/90 transition-all duration-300 hover:shadow-lg hover:shadow-primary/20"
               >
                 {t.hero.cta}
@@ -182,7 +185,9 @@ export function Hero() {
             className="flex flex-col sm:flex-row items-center gap-4 w-full max-w-sm"
           >
             <a
-              href="#contact"
+              href={WHATSAPP_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-background text-primary font-medium rounded-full hover:bg-background/90 transition-all duration-300"
             >
               {t.hero.cta}
