@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion'
 import { useI18n } from '@/lib/i18n'
 import { useScrollAnimation } from '@/hooks/use-scroll-animation'
-import { Video, Users, Sparkles, MapPin, Clock } from 'lucide-react'
+import { Video, Users, Sparkles, Clock } from 'lucide-react'
 import { WHATSAPP_URL } from '@/lib/contact'
 
 export function ClassesSection() {
@@ -78,15 +78,9 @@ export function ClassesSection() {
               <p className="text-primary-foreground/75 leading-relaxed mb-6">
                 {t.classes.presential.description}
               </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-2 text-sm text-primary-foreground/85">
-                  <Clock className="w-4 h-4" />
-                  <span>{t.classes.presential.schedule}</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-primary-foreground/85">
-                  <MapPin className="w-4 h-4" />
-                  <span>{t.classes.presential.location}</span>
-                </div>
+              <div className="flex items-center gap-2 text-sm text-primary-foreground/85">
+                <Clock className="w-4 h-4" />
+                <span>{t.classes.presential.schedule}</span>
               </div>
               <a
                 href={WHATSAPP_URL}

@@ -39,7 +39,6 @@ interface Translations {
       title: string
       description: string
       schedule: string
-      location: string
     }
     levels: {
       title: string
@@ -70,7 +69,6 @@ interface Translations {
     subtitle: string
     whatsapp: string
     instagram: string
-    location: string
   }
   footer: {
     rights: string
@@ -126,7 +124,6 @@ const translations: Record<Language, Translations> = {
         title: 'Clases Presenciales',
         description: 'Encuentros cuidados para profundizar la técnica, la respiración y la escucha del cuerpo.',
         schedule: 'Lunes y Miércoles — 19:30',
-        location: 'Renacer Studio — Pinares, Maldonado',
       },
       levels: {
         title: 'Todos los Niveles',
@@ -176,7 +173,6 @@ const translations: Record<Language, Translations> = {
       subtitle: 'Conectemos',
       whatsapp: 'WhatsApp',
       instagram: 'Instagram',
-      location: 'Ubicación',
     },
     footer: {
       rights: '© 2026 Samudra Vinyāsa. Todos los derechos reservados.',
@@ -230,7 +226,6 @@ const translations: Record<Language, Translations> = {
         title: 'In-Person Classes',
         description: 'Carefully held sessions to deepen technique, breath, and body awareness.',
         schedule: 'Monday and Wednesday — 7:30 PM',
-        location: 'Renacer Studio — Pinares, Maldonado',
       },
       levels: {
         title: 'All Levels',
@@ -280,7 +275,6 @@ const translations: Record<Language, Translations> = {
       subtitle: "Let's connect",
       whatsapp: 'WhatsApp',
       instagram: 'Instagram',
-      location: 'Location',
     },
     footer: {
       rights: '© 2026 Samudra Vinyāsa. All rights reserved.',
@@ -334,7 +328,6 @@ const translations: Record<Language, Translations> = {
         title: 'Aulas Presenciais',
         description: 'Encontros cuidados para aprofundar técnica, respiração e escuta do corpo.',
         schedule: 'Segunda e Quarta — 19:30',
-        location: 'Renacer Studio — Pinares, Maldonado',
       },
       levels: {
         title: 'Todos os Níveis',
@@ -384,7 +377,6 @@ const translations: Record<Language, Translations> = {
       subtitle: 'Vamos nos conectar',
       whatsapp: 'WhatsApp',
       instagram: 'Instagram',
-      location: 'Localização',
     },
     footer: {
       rights: '© 2026 Samudra Vinyāsa. Todos os direitos reservados.',

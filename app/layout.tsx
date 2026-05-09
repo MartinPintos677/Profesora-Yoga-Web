@@ -18,15 +18,15 @@ const cormorant = Cormorant_Garamond({
 
 export const metadata: Metadata = {
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000'),
-  title: 'Samudra Vinyāsa | Ashtanga Yoga en Maldonado',
-  description: 'Clases de Ashtanga Yoga presenciales en Pinares, Maldonado y virtuales. Una práctica guiada por Rafaela para habitar el cuerpo, la respiración y el movimiento consciente.',
-  keywords: ['Ashtanga Yoga', 'Yoga Maldonado', 'Yoga Pinares', 'Yoga Uruguay', 'Samudra Vinyasa', 'Clases de yoga'],
+  title: 'Samudra Vinyāsa | Ashtanga Yoga',
+  description: 'Clases de Ashtanga Yoga presenciales y virtuales. Una práctica guiada por Rafaela para habitar el cuerpo, la respiración y el movimiento consciente.',
+  keywords: ['Ashtanga Yoga', 'Yoga Uruguay', 'Samudra Vinyasa', 'Clases de yoga', 'Meditación en movimiento'],
   icons: {
     icon: '/icon.svg',
     apple: '/apple-icon.png',
   },
   openGraph: {
-    title: 'Samudra Vinyāsa | Ashtanga Yoga en Maldonado',
+    title: 'Samudra Vinyāsa | Ashtanga Yoga',
     description: 'Clases presenciales y virtuales de Ashtanga Yoga guiadas por Rafaela.',
     type: 'website',
     images: ['/Logo.jpg'],
