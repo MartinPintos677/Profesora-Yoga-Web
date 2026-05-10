@@ -194,7 +194,7 @@ export function Hero() {
             </a>
             <a
               href="#classes"
-              className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 border border-background/40 text-background font-medium rounded-full hover:bg-background/10 transition-all duration-300"
+              className="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-primary/90 text-primary-foreground border border-primary/30 font-medium rounded-full shadow-lg shadow-primary/20 hover:bg-primary transition-all duration-300"
             >
               {t.hero.ctaSecondary}
             </a>
