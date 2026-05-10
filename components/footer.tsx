@@ -28,7 +28,7 @@ export function Footer() {
               alt="Samudra Vinyāsa"
               width={96}
               height={96}
-              className="rounded-full"
+              className="rounded-full ring-1 ring-primary/20"
             />
             <span className="font-serif text-3xl font-light text-primary">
               Samudra Vinyāsa

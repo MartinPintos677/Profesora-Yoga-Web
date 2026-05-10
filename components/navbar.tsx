@@ -47,7 +47,7 @@ export function Navbar() {
               alt="Samudra Vinyāsa"
               width={40}
               height={40}
-              className="rounded-full"
+              className="rounded-full ring-1 ring-primary/20"
             />
             <span className="font-serif text-lg font-medium text-primary hidden sm:block">
               Samudra Vinyāsa
