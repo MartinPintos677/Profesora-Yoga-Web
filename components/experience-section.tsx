@@ -40,7 +40,7 @@ function MediaTile({
           loop
           playsInline
           controls
-          preload="metadata"
+          preload="none"
         />
       )}
       <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-primary/35 via-transparent to-transparent" />
