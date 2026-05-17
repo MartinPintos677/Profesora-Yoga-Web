@@ -63,9 +63,6 @@ export function ExperienceSection() {
 
   const videos: MediaItem[] = [
     { type: 'video', src: '/VIdeo1.mp4' },
-    { type: 'video', src: '/Video2.mp4' },
-    { type: 'video', src: '/Video3.mp4' },
-    { type: 'video', src: '/Video4.mp4' },
     { type: 'video', src: '/Video5.mp4' },
     { type: 'video', src: '/Video6.mp4' },
   ]
