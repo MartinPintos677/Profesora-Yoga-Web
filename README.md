@@ -4,7 +4,7 @@ Landing page profesional para **Samudra Vinyāsa**, emprendimiento de Ashtanga Y
 
 El sitio fue desarrollado como una experiencia visual minimalista, espiritual y terapéutica, orientada a presentar la propuesta de clases, transmitir la identidad de marca y facilitar el contacto directo mediante WhatsApp e Instagram.
 
-## 🌐 Demo
+## 🌐 Link
 
 https://samudra-vinyasa.netlify.app/
 
