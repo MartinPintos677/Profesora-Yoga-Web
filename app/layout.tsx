@@ -21,8 +21,14 @@ export const metadata: Metadata = {
   description: 'Clases de Ashtanga Yoga presenciales y virtuales. Una práctica guiada por Rafaela para habitar el cuerpo, la respiración y el movimiento consciente.',
   keywords: ['Ashtanga Yoga', 'Yoga Uruguay', 'Samudra Vinyasa', 'Clases de yoga', 'Meditación en movimiento'],
   icons: {
-    icon: '/icon.svg',
-    apple: '/apple-icon.png',
+    icon: [
+      {
+        url: '/favicon.png',
+        type: 'image/png',
+        sizes: '96x96',
+      },
+    ],
+    apple: '/favicon.png',
   },
   openGraph: {
     title: 'Samudra Vinyāsa | Ashtanga Yoga',
